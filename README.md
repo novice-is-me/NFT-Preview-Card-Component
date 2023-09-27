@@ -15,4 +15,4 @@ Your users should be able to:
 - HTML5
 - CSS 
 
-![Click to view live]()
+![Click to view live](https://novice-is-me.github.io/NFT-Preview-Card-Component/) 
