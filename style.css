@@ -32,16 +32,45 @@ span{
 }
 
 .container{ 
-    background-color: hsl(216, 50%, 16%);
-    border: 1px solid yellow; 
+    background-color: hsl(216, 50%, 16%); 
     padding: 1em;  
-    margin: 4em auto; 
+    margin: 0 auto; 
     padding-bottom: 0;     
     width: 80%; 
     min-width: 330px;    
-    max-width: 330px;   
+    max-width: 330px;
+    position: absolute; 
+    transform: translate(-50%,-50%);    
+    top: 50%;
+    left: 50%;       
          
 }
+
+.overlay{
+    position: absolute;
+    top: 32%;        
+    left: 0;
+    right: 0; 
+    background: black; 
+}
+
+.content{
+    position: absolute;
+    top: 50%;       
+    left: 50%; 
+    padding: 8.1em;         
+    opacity: 0;     
+    transition: opacity 0.4s ease-in-out; 
+    transform: translate(-50%, -50%);
+    background-color: hsl(178, 100%, 50%); 
+    border-radius: 20px; 
+}
+
+.content:hover{  
+    opacity: 0.6;      
+    cursor: pointer;  
+}
+
 
 .container,
 .container img{
@@ -50,7 +79,13 @@ span{
 
 .container img{
     width: 100%;
-    object-fit: cover; 
+    object-fit: cover;   
+}
+
+.container-card h2:hover,
+.container-creator span:hover{ 
+    color:hsl(178, 100%, 50%); 
+    cursor: pointer;  
 }
 
 .container-card,
@@ -74,14 +109,12 @@ span{
 }
 
 .container-subinfo{
-    border: 1px solid greenyellow; 
     margin-top:1em;  
     justify-content: space-between; 
 }
  
 .container-flex{ 
-    width: 38%;             
-    border: 1px solid orangered; 
+    width: 38%;              
     justify-content: space-between;   
 }
 
@@ -90,7 +123,6 @@ span{
 }
 
 .container-subinfo svg{ 
-    border: 1px solid white; 
     margin-top: .15em;     
 }
 
